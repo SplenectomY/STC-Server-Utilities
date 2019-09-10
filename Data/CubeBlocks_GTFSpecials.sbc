@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition" Enabled="false">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>ShieldChargerBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Shield Charger Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\ShieldCharger_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+    <Size x="3" y="3" z="3" />
+    <ModelOffset x="0" y="0" z="0" />
+    <Model>Models\Cubes\large\ShieldChargerBase_Large.mwm</Model>
+    <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="49" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="10" />
+        <Component Subtype="CoolingHeatsink" Count="10" />
+        <Component Subtype="FocusPrysm" Count="10" />
+        <Component Subtype="PowerCoupler" Count="10" />
+        <Component Subtype="ShieldFrequencyModule" Count="10" />
+        <Component Subtype="SafetyBypass" Count="10" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\ShieldChargerBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>ShieldChargerBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="BeamLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+<DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-2</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1000</MaxRangeMeters>
+      <RotationSpeed>0.00024</RotationSpeed>
+      <ElevationSpeed>0.00024 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov><DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <AiEnabled>false</AiEnabled>
+    </Definition>
+
+
+  </CubeBlocks>
+</Definitions>

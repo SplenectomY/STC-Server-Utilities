@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+	<Id>
+		<TypeId>UpgradeModule</TypeId>
+		<SubtypeId>GSF_Heatsink_Large</SubtypeId>
+	</Id>
+	<DisplayName>Heat Sink</DisplayName>
+	<Icon>Textures\GUI\Icons\Heatsink.dds</Icon>
+	<CubeSize>Large</CubeSize>
+	<BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+	<ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Large.mwm</Model>
+  <Description>Increases the passive cooling efficiency of energy weapons. Will require maintenance/repairs if used excessively.</Description>
+	<BuildProgressModels>
+    <Model BuildPercentUpperBound="1.00" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Large_Constr3.mwm" />
+    <Model BuildPercentUpperBound="0.66" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Large_Constr2.mwm" />
+		<Model BuildPercentUpperBound="0.33" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Large_Constr1.mwm" />
+	</BuildProgressModels>
+	<MountPoints>
+		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+	</MountPoints>
+	<Components>
+        <Component Subtype="CoolingHeatsink" Count="20" />
+        <Component Subtype="Superconductor" Count="10" />
+        <Component Count="20" Subtype="Construction" />
+        <Component Count="32" Subtype="SmallTube" />
+        <Component Count="5" Subtype="Computer" />
+        <Component Count="20" Subtype="SteelPlate" />
+    </Components>
+    <CriticalComponent Index="0" Subtype="Computer" />
+	
+	<VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>Heat_Sink</BlockPairName>
+	<EdgeType>Light</EdgeType>
+	<MirroringY>None</MirroringY>
+    <MirroringZ>None</MirroringZ>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+	<Id>
+		<TypeId>UpgradeModule</TypeId>
+		<SubtypeId>GSF_Heatsink_Small</SubtypeId>
+	</Id>
+	<DisplayName>Heat Sink</DisplayName>
+	<Icon>Textures\GUI\Icons\Heatsink.dds</Icon>
+	<CubeSize>Small</CubeSize>
+	<BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+	<ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Small.mwm</Model>
+  <Description>Increases the passive cooling efficiency of energy weapons. Will require maintenance/repairs if used excessively.</Description>
+	<BuildProgressModels>
+    <Model BuildPercentUpperBound="1.00" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Small_Constr3.mwm" />
+    <Model BuildPercentUpperBound="0.66" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Small_Constr2.mwm" />
+		<Model BuildPercentUpperBound="0.33" File="Models\Cubes\radiator\RadiatorAssemblyCube_v1A_Small_Constr1.mwm" />
+	</BuildProgressModels>
+	<MountPoints>
+		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+	</MountPoints>
+	<Components>
+        <Component Subtype="CoolingHeatsink" Count="1" />
+        <Component Subtype="Superconductor" Count="1" />
+        <Component Count="1" Subtype="Construction" />
+        <Component Count="1" Subtype="SmallTube" />
+        <Component Count="1" Subtype="Computer" />
+        <Component Count="5" Subtype="SteelPlate" />
+    </Components>
+    <CriticalComponent Index="0" Subtype="Computer" />
+	
+	<VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>Heat_Sink</BlockPairName>
+	<EdgeType>Light</EdgeType>
+	<MirroringY>None</MirroringY>
+    <MirroringZ>None</MirroringZ>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>

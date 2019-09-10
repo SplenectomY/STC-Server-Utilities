@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>OctocoreComponent</SubtypeId>
+      </Id>
+      <DisplayName>Octocore</DisplayName>
+      <Icon>Textures\GUI\Icons\component\Octocore.dds</Icon>
+      <Prerequisites>
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="0.16" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="0.84" TypeId="Ingot" SubtypeId="Silicon" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Octocore" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>XenucoreComponent</SubtypeId>
+      </Id>
+      <DisplayName>Xenucore</DisplayName>
+      <Icon>Textures\GUI\Icons\component\Xenucore.dds</Icon>
+      <Prerequisites>
+        <Item Amount="16" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="9" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="12" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="9" TypeId="Ingot" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Xenucore" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+  </Blueprints>
+</Definitions>

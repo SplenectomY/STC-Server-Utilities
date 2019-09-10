@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PhysicalItems>
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>HeavyWater</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Water</DisplayName>
+      <Icon>Textures\GUI\Icons\component\HydrogenBottle_Component.dds</Icon>
+      <Size>
+        <X>0.037</X>
+        <Y>0.037</Y>
+        <Z>0.037</Z>
+      </Size>
+      <Mass>5</Mass>
+      <Volume>0.052</Volume>
+      <Model>Models\Components\HydrogenTankItem.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+      <IconSymbol>D2o</IconSymbol>
+    </PhysicalItem>
+  </PhysicalItems>
+</Definitions>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <PhysicalItems>
+    <PhysicalItem>
+      <Id>
+        <TypeId>Ingot</TypeId>
+        <SubtypeId>SafezoneCredits</SubtypeId>
+      </Id>
+      <DisplayName>Safe Zone Credits</DisplayName>
+      <Icon>Textures\GUI\Icons\SafezoneCredit.dds</Icon>
+      <Size>
+        <X>0.1</X>
+        <Y>0.1</Y>
+        <Z>0.02</Z>
+      </Size>
+      <Mass>0</Mass>
+      <Volume>0</Volume>
+      <Model>Models\SafezoneCredit.mwm</Model>
+      <PhysicalMaterial>Metal</PhysicalMaterial>
+    </PhysicalItem>
+  </PhysicalItems>
+
+  <Blueprints>
+      <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SafezoneCredits</SubtypeId>
+      </Id>
+      <DisplayName>Safe Zone Credits</DisplayName>
+      <Icon>Textures\GUI\Icons\SafezoneCredit.dds</Icon>
+      <Prerequisites>
+        <Item Amount="0.1" TypeId="Ore" SubtypeId="Organic" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SafezoneCredits" />
+      <BaseProductionTimeInSeconds>666</BaseProductionTimeInSeconds>
+    </Blueprint>   
+
+  </Blueprints>
+</Definitions>

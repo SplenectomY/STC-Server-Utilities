@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Ammos>
+
+    <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>AmmoTMSmallBlasterTurret</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>400</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1200</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+        <IsExplosive>false</IsExplosive>
+      </BasicProperties>
+      <MissileProperties>
+        <MissileMass>200</MissileMass>
+        <MissileExplosionRadius>3</MissileExplosionRadius>
+        <MissileModelName>Models\Projectiles\PlasmaLargeShot_Large.mwm</MissileModelName>
+        <MissileAcceleration>0</MissileAcceleration>
+        <MissileInitialSpeed>400</MissileInitialSpeed>
+        <MissileSkipAcceleration>true</MissileSkipAcceleration>
+        <MissileExplosionDamage>15000</MissileExplosionDamage>
+      </MissileProperties>
+    </Ammo>
+
+    <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>AmmoMediumTMBlasterTurret</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>400</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1200</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+        <IsExplosive>false</IsExplosive>
+      </BasicProperties>
+      <MissileProperties>
+        <MissileMass>200</MissileMass>
+        <MissileExplosionRadius>3</MissileExplosionRadius>
+        <MissileModelName>Models\Projectiles\PlasmaLargeShot_Large.mwm</MissileModelName>
+        <MissileAcceleration>0</MissileAcceleration>
+        <MissileInitialSpeed>400</MissileInitialSpeed>
+        <MissileSkipAcceleration>true</MissileSkipAcceleration>
+        <MissileExplosionDamage>6800</MissileExplosionDamage>
+      </MissileProperties>
+    </Ammo>
+
+    <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>AmmoTMLargeBlasterTurret</SubtypeId>
+      </Id>
+      <BasicProperties>
+        <DesiredSpeed>400</DesiredSpeed>
+        <SpeedVariance>0</SpeedVariance>
+        <MaxTrajectory>1400</MaxTrajectory>
+        <BackkickForce>0</BackkickForce>
+        <IsExplosive>false</IsExplosive>
+      </BasicProperties>
+      <MissileProperties>
+        <MissileMass>200</MissileMass>
+        <MissileExplosionRadius>3</MissileExplosionRadius>
+        <MissileModelName>Models\Projectiles\TMLargePlasmaShot_Large.mwm</MissileModelName>
+        <MissileAcceleration>0</MissileAcceleration>
+        <MissileInitialSpeed>400</MissileInitialSpeed>
+        <MissileSkipAcceleration>true</MissileSkipAcceleration>
+        <MissileExplosionDamage>15000</MissileExplosionDamage>
+      </MissileProperties>
+    </Ammo>
+
+    <Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">
+      <Id>
+        <TypeId>AmmoDefinition</TypeId>
+        <SubtypeId>AmmoTMSiegeBlasterTurret</SubtypeId>
+      </Id>
+      <BasicProperties>
+	<DesiredSpeed>350</DesiredSpeed>
+	<SpeedVariance>0</SpeedVariance>
+	<MaxTrajectory>1800</MaxTrajectory>
+	<IsExplosive>false</IsExplosive>
+	<BackkickForce>0</BackkickForce>
+      </BasicProperties>
+      <MissileProperties>
+	<MissileMass>400</MissileMass>
+	<MissileExplosionRadius>9</MissileExplosionRadius>
+	<MissileModelName>Models\Projectiles\TMSiegePlasmaShot_Large.mwm</MissileModelName>
+	<MissileAcceleration>0</MissileAcceleration>
+	<MissileInitialSpeed>400</MissileInitialSpeed>
+	<MissileSkipAcceleration>true</MissileSkipAcceleration>
+	<MissileExplosionDamage>96000</MissileExplosionDamage>
+	</MissileProperties>
+    </Ammo>
+
+</Ammos>
+</Definitions>

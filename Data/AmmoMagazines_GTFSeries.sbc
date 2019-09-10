@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AmmoMagazines>
+	<AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class1LaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>Class 1 Laser Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class1LaserBeamProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Size7LaserRepeaterCharge</SubtypeId>
+      </Id>
+      <DisplayName>Size 7 Laser Repeater Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Size7LaserRepeaterProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class6LaserBeamCharge</SubtypeId>
+      </Id>
+      <DisplayName>Class 6 Laser Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class6LaserBeamProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>AegisStaticLargeMag</SubtypeId>
+      </Id>
+      <DisplayName>Aegis Large Beam Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AegisStaticLargeProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Class7LaserPulseCharge</SubtypeId>
+      </Id>
+      <DisplayName>Class 7 Pulse Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Class7LaserPulseChargeProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>Size5LaserCannonCharge</SubtypeId>
+      </Id>
+      <DisplayName>Size 5 Laser Cannon Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellgreen.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="Size5LaserCannonChargeProjectile" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineFighterDualLightBlaster</SubtypeId>
+      </Id>
+      <DisplayName>Small Blaster Power Cell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellblue.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\smallblasterpowercellgreen.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AmmoFighterDualLightBlaster" />
+    </AmmoMagazine> 
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineSmallBlasterTurret</SubtypeId>
+      </Id>
+      <DisplayName>Class 1 Plasma Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellblue.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.2</Y>
+        <Z>0.2</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>2</Capacity>
+      <AmmoDefinitionId Subtype="AmmoSmallBlasterTurret" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineMediumBlasterTurret</SubtypeId>
+      </Id>
+      <DisplayName>Medium Class Plasma Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellblue.dds</Icon>
+      <Size>
+        <X>.35</X>
+        <Y>.25</Y>
+        <Z>.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>2</Capacity>
+      <AmmoDefinitionId Subtype="AmmoMediumBlasterTurret" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineLargeBlasterTurret</SubtypeId>
+      </Id>
+      <DisplayName>Large Class Plasma Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellblue.dds</Icon>
+      <Size>
+        <X>.35</X>
+        <Y>.25</Y>
+        <Z>.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>2</Capacity>
+      <AmmoDefinitionId Subtype="AmmoLargeBlasterTurret" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineCitadelBlasterTurret</SubtypeId>
+      </Id>
+      <DisplayName>Citadel Class Plasma Charge</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellblue.dds</Icon>
+      <Size>
+        <X>0.35</X>
+        <Y>0.35</Y>
+        <Z>0.35</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\Ammo_Box.mwm</Model>
+      <PhysicalMaterial>Ammo</PhysicalMaterial>
+      <Capacity>2</Capacity>
+      <AmmoDefinitionId Subtype="AmmoCitadelBlasterTurret" />
+    </AmmoMagazine>
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineSmallTorpedoPowerCellRed</SubtypeId>
+      </Id>
+      <DisplayName>Photon Torpedo Power Cell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellred.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\smallblasterpowercellgreen.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AmmoSmallPhotonTorpedoRed" />
+    </AmmoMagazine> 
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineNovaTorpedoPowerCellRed</SubtypeId>
+      </Id>
+      <DisplayName>Photon Torpedo Power Cell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellred.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\smallblasterpowercellgreen.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AmmoNovaPhotonTorpedoRed" />
+    </AmmoMagazine> 
+
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineThorMissilePowerCellOrange</SubtypeId>
+      </Id>
+      <DisplayName>Thor Power Cell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellorange.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\smallblasterpowercellgreen.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AmmoThorMissileOrange" />
+    </AmmoMagazine> 
+    <AmmoMagazine>
+      <Id>
+        <TypeId>AmmoMagazine</TypeId>
+        <SubtypeId>MagazineSmallThorMissilePowerCellOrange</SubtypeId>
+      </Id>
+      <DisplayName>Photon Torpedo Power Cell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\smallblastercellorange.dds</Icon>
+      <Size>
+        <X>0.25</X>
+        <Y>0.25</Y>
+        <Z>0.25</Z>
+      </Size>
+      <Mass>0.01</Mass>
+      <Volume>0.01</Volume>
+      <Model>Models\Weapons\smallblasterpowercellgreen.mwm</Model>
+      <Capacity>1</Capacity>
+      <AmmoDefinitionId Subtype="AmmoSmallThorMissileOrange" />
+    </AmmoMagazine> 
+	
+</AmmoMagazines>
+</Definitions>

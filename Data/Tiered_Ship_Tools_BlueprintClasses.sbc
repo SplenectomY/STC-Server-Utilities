@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+
+    <!-- Large Block -->
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="UpgradeModule/ImpossibilityCube" />
+
+
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Drill/Small_Drill_Tier1" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Drill/Small_Drill_Tier2" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Drill/Small_Drill_Tier3" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Drill/Small_Drill_Tier4" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Drill/Large_Drill_Tier1" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Drill/Large_Drill_Tier2" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Drill/Large_Drill_Tier3" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Drill/Large_Drill_Tier4" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ShipWelder/BaseWelderLB" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ShipGrinder/BaseGrinderLB" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="ShipWelder/SBWelderBase" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="ShipGrinder/SBGrinderBase" />
+
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Small_Drill_Tier1" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Small_Drill_Tier2" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Small_Drill_Tier3" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Small_Drill_Tier4" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Large_Drill_Tier1" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Large_Drill_Tier2" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Large_Drill_Tier3" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Large_Drill_Tier4" />
+
+    <Entry Class="Components" BlueprintSubtypeId="OctocoreComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="XenucoreComponent" />
+
+  </BlueprintClassEntries>
+</Definitions>

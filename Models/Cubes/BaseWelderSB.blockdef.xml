@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definition>
+	<Id>
+		<SubtypeId>BaseWelderSB</SubtypeId>
+	</Id>
+	<Icon>Textures\Icons\Scene.dds</Icon>
+	<CubeSize>Small</CubeSize>
+	<BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="3" z="6" />
+	<ModelOffset x="0" y="0" z="0" />
+	<Model>Models\BaseWelderSB.mwm</Model>
+	<BlockPairName>Scene</BlockPairName>
+</Definition>

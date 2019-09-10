@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>XLGigaBeamGTFBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>S7x2 Laser Repeater Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\XLGigaBeamGTF_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="9" y="4" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+    <Center x="4" y="3" z="6" />
+    <Model>Models\Cubes\large\XLGigaBeamGTFBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="81" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="CapacitorBank" Count="25" />
+        <Component Subtype="CoolingHeatsink" Count="25" />
+        <Component Subtype="FocusPrysm" Count="25" />
+        <Component Subtype="PowerCoupler" Count="25" />
+        <Component Subtype="ShieldFrequencyModule" Count="25" />
+        <Component Subtype="PWMCircuit" Count="35" />
+        <Component Subtype="SteelPlate" Count="450" />
+      </Components>
+      <CriticalComponent Subtype="PWMCircuit" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="4.20" StartY="7.20" EndX="4.80" EndY="7.80" />
+		<MountPoint Side="Bottom" StartX="7.20" StartY="4.20" EndX="7.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="1.20" EndX="4.80" EndY="1.80" />
+		<MountPoint Side="Bottom" StartX="1.20" StartY="4.20" EndX="1.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="4.20" EndX="4.80" EndY="4.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\XLGigaBeamGTFBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>XLGigaBeamGTFBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>w
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>300</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="S7x2LaserRepeater" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-5</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>2400</MaxRangeMeters>
+      <RotationSpeed>0.000098</RotationSpeed>
+      <ElevationSpeed>0.000098</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>500</PCU>
+    </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>XLDualPulseLaserBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>S7x2 Laser Cannon Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\XLGigaPulseLaser.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="9" y="4" z="9" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="4" y="3" z="6" />
+      <Model>Models\Cubes\large\XLDualPulseLaserBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="81" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="FocusPrysm" Count="25" />
+        <Component Subtype="PowerCoupler" Count="25" />
+        <Component Subtype="SafetyBypass" Count="25" />
+        <Component Subtype="CoolingHeatsink" Count="25" />
+        <Component Subtype="CapacitorBank" Count="25" />
+        <Component Subtype="ShieldFrequencyModule" Count="25" />
+        <Component Subtype="SteelPlate" Count="250" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="8.20" StartY="4.20" EndX="8.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="0.20" StartY="4.20" EndX="0.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="0.20" EndX="4.80" EndY="0.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="8.20" EndX="4.80" EndY="8.80" />
+		<MountPoint Side="Bottom" StartX="6.20" StartY="4.20" EndX="6.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="2.20" StartY="4.20" EndX="2.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="2.20" EndX="4.80" EndY="2.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="6.20" EndX="4.80" EndY="6.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="4.20" EndX="4.80" EndY="4.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\XLDualPulseLaserBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>XLDualPulseLaserBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="BEHR_LaserCannon_S7x2" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-5</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1500</MaxRangeMeters>
+      <RotationSpeed>0.000098</RotationSpeed>
+      <ElevationSpeed>0.000098</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>500</PCU>
+    </Definition>
+
+	
+  </CubeBlocks>
+</Definitions>

@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+   <!-- ************************************************* Small Class Weapons ***********************************************-->
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>SDualPlasmaBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Small Dual Blaster Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\SMLDualBlaster_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\SDualPlasmaBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\SDualPlasmaBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>SDualPlasmaBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="SmallBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>LSDualPlasmaStatic_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Dual Static Blaster</DisplayName>
+      <Icon>Textures\GUI\Icons\DualBlasterStatic_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\large\LSDualPlasmaStatic_Large.mwm</Model>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\LSDualPlasmaStatic_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LSDualPlasmaStatic</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="MediumBlasterStatic" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <PCU>225</PCU>
+    </Definition>
+
+	<!-- ************************************************* Medium Class Weapons ***********************************************-->
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>MDualPlasmaBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Medium Dual Blaster Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\MedDualBlaster_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\MDualPlasmaBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="9" />
+        <Component Subtype="Computer" Count="8" />
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\MDualPlasmaBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>MDualPlasmaBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="MediumBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-25</MinElevationDegrees>
+      <MaxElevationDegrees>50</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.00017</RotationSpeed>
+      <ElevationSpeed>0.00015</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>ThorStatic_Large</SubtypeId>
+      </Id>
+      <DisplayName>Thor Plasma Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\ThorLauncher_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="0" y="0" z="1" />
+      <Model>Models\Cubes\large\LongbowStatic_Large.mwm</Model>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="20" />
+        <Component Subtype="Computer" Count="8" />
+        <Component Subtype="CapacitorBank" Count="10" />
+        <Component Subtype="CoolingHeatsink" Count="10" />
+        <Component Subtype="FocusPrysm" Count="10" />
+        <Component Subtype="PowerCoupler" Count="10" />
+        <Component Subtype="ShieldFrequencyModule" Count="10" />
+        <Component Subtype="PWMCircuit" Count="14" />
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Back" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+		<MountPoint Side="Left" StartX="1.10" StartY="0.20" EndX="1.70" EndY="0.80" />
+		<MountPoint Side="Right" StartX="0.30" StartY="0.20" EndX="0.90" EndY="0.80" />
+		<MountPoint Side="Bottom" StartX="0.20" StartY="1.10" EndX="0.80" EndY="1.70" />
+		<MountPoint Side="Top" StartX="0.20" StartY="0.30" EndX="0.80" EndY="0.90" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\LongbowStatic_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <Center x="0" y="-1" z="0" />
+      <BlockPairName>ThorStatic</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="Thor_Missile" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <PCU>225</PCU>
+    </Definition>
+
+	<!-- ************************************************* Large Class Weapons ***********************************************-->
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>LPlasmaTriBlasterBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Large Tri Blaster Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\LRGTriBlaster_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="3" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\LPlasmaTriBlasterBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="49" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="1.20" StartY="2.20" EndX="1.80" EndY="2.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\LPlasmaTriBlasterBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>LPlasmaTriBlasterBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="LargeBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>80</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1000</MaxRangeMeters>
+      <RotationSpeed>0.00024</RotationSpeed>
+      <ElevationSpeed>0.00024 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>ThorTurretBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>Thor Dual Plasma Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\ThorTurret_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\LongbowTurretBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="49" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="CapacitorBank" Count="10" />
+        <Component Subtype="CoolingHeatsink" Count="10" />
+        <Component Subtype="FocusPrysm" Count="10" />
+        <Component Subtype="PowerCoupler" Count="10" />
+        <Component Subtype="ShieldFrequencyModule" Count="10" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\LongbowTurretBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>ThorTurretBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>200</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="Thor_MissileTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-15</MinElevationDegrees>
+      <MaxElevationDegrees>35</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1200</MaxRangeMeters>
+      <RotationSpeed>0.00024</RotationSpeed>
+      <ElevationSpeed>0.00024 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>NovaTorpedoLauncher_Large</SubtypeId>
+      </Id>
+      <DisplayName>Nova Heavy Plasma Torpedo</DisplayName>
+      <Icon>Textures\GUI\Icons\NovaLauncher_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\CatapultTorpedoLauncher_Large.mwm</Model>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="51" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Back" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+		<MountPoint Side="Left" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+		<MountPoint Side="Right" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+		<MountPoint Side="Bottom" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+		<MountPoint Side="Top" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\CatapultTorpedoLauncher_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>NovaTorpedoLauncher</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="Nova_Torpedo" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <PCU>225</PCU>
+    </Definition>
+
+	<!-- ************************************************* XL Class Weapons ***********************************************-->
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>XLCitadelPlasmaCannonBarrel_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF XL Citadel Plasma Cannon Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\XLCitadelBlaster_Icon.dds</Icon>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="4" z="9" />							<!-- Dimensions of block -->
+      <ModelOffset x="0" y="0" z="0" />
+    <Center x="4" y="3" z="6" />
+    <Model>Models\Cubes\Large\XLCitadelPlasmaCannon_Large.mwm</Model>   <!-- replace with main weapon model file -->
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxL" Count="81" />
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="CapacitorBank" Count="25" />
+        <Component Subtype="CoolingHeatsink" Count="25" />
+        <Component Subtype="FocusPrysm" Count="25" />
+        <Component Subtype="PowerCoupler" Count="25" />
+        <Component Subtype="ShieldFrequencyModule" Count="25" />
+        <Component Subtype="PWMCircuit" Count="35" />
+        <Component Subtype="SteelPlate" Count="450" />
+      </Components>
+      <CriticalComponent Subtype="PWMCircuit" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="7.20" StartY="4.20" EndX="7.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="1.20" StartY="4.20" EndX="1.80" EndY="4.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="7.20" EndX="4.80" EndY="7.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="1.20" EndX="4.80" EndY="1.80" />
+		<MountPoint Side="Bottom" StartX="4.20" StartY="4.20" EndX="4.80" EndY="4.80" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\XLCitadelPlasmaCannon_Large_Constr1.mwm" />		<!-- Construction models --> />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>XLCitadelPlasmaCannonBarrel</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>300</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="CitadelBlasterTurret" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-10</MinElevationDegrees>
+      <MaxElevationDegrees>80</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>2000</MaxRangeMeters>
+      <RotationSpeed>0.000098</RotationSpeed>
+      <ElevationSpeed>0.000098</ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>425</PCU>
+    </Definition>
+
+
+
+	<!-- ************************************************* Small Ships Weapons ***********************************************-->
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>SSDualPlasmaStatic_Small</SubtypeId>
+      </Id>
+      <DisplayName>GTF Small Dual Static Blaster</DisplayName>
+      <Icon>Textures\GUI\Icons\DualBlasterStatic_Icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\small\SSDualPlasmaStatic_Small.mwm</Model>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxS" Count="1" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\SSDualPlasmaStatic_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>LSDualPlasmaStatic</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="1" />
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="FighterDualLightBlaster" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>ThorStatic_Small</SubtypeId>
+      </Id>
+      <DisplayName>Small Thor Plasma Missile Launcher</DisplayName>
+      <Icon>Textures\GUI\Icons\ThorLauncher_Icon.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="0" y="0" z="1" />
+      <Model>Models\Cubes\small\LongbowStatic_Small.mwm</Model>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxS" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Back" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+		<MountPoint Side="Left" StartX="1.10" StartY="0.20" EndX="1.70" EndY="0.80" />
+		<MountPoint Side="Right" StartX="0.30" StartY="0.20" EndX="0.90" EndY="0.80" />
+		<MountPoint Side="Bottom" StartX="0.20" StartY="1.10" EndX="0.80" EndY="1.70" />
+		<MountPoint Side="Top" StartX="0.20" StartY="0.30" EndX="0.80" EndY="0.90" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\LongbowStatic_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>ThorStatic</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="Thor_MissileSmall" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+		<SubtypeId>SSPhotonLauncher_Small</SubtypeId>
+      </Id>
+      <DisplayName>Photon Torpedo Launcher</DisplayName>
+      <Icon>Textures\GUI\Icons\PhotonTorpedo_Icon.dds</Icon>
+	<CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="2" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\small\SSPhotonLauncher_Small.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="PulseCannonConstructionBoxS" Count="50" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="SteelPlate" Count="100" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Top" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\SSPhotonLauncher_Small_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>SSPhotonLauncher</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="Small_Photon_Torpedo" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>225</PCU>
+    </Definition>
+
+
+	
+	
+  </CubeBlocks>
+</Definitions>

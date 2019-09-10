@@ -1,0 +1,128 @@
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+  
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+	<Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>All Weapons</DisplayName>
+      <Name>AllWeapons</Name>
+      <ItemIds>
+
+		<string>LargeMissileTurret/XLCitadelPlasmaCannonBarrel_Large</string>
+		<string>LargeMissileTurret/LPlasmaTriBlasterBase_Large</string>
+		<string>LargeMissileTurret/MDualPlasmaBase_Large</string>
+		<string>LargeMissileTurret/SDualPlasmaBase_Large</string>
+		<string>LargeMissileTurret/ThorTurretBase_Large</string>
+		<string>SmallMissileLauncher/SSPhotonLauncher_Small</string>
+		<string>SmallMissileLauncher/SSDualPlasmaStatic_Small</string>
+		<string>SmallMissileLauncher/LSDualPlasmaStatic_Large</string>
+		<string>SmallMissileLauncher/NovaTorpedoLauncher_Large</string>
+		<string>SmallMissileLauncher/ThorStatic_Large</string>
+		<string>SmallMissileLauncher/ThorStatic_Small</string>
+
+		<string>LargeMissileTurret/SmallBeamBaseGTF_Large</string>
+		<string>LargeMissileTurret/MediumQuadBeamGTFBase_Large</string>
+		<string>LargeMissileTurret/LargeDualBeamGTFBase_Large</string>
+		<string>LargeMissileTurret/XLGigaBeamGTFBase_Large</string>
+
+		<string>LargeMissileTurret/Interior_Pulse_Laser_Base_Large</string>
+		<string>LargeMissileTurret/SmallPulseLaser_Base_Large</string>
+		<string>LargeMissileTurret/MPulseLaserBase_Large</string>
+		<string>LargeMissileTurret/MPulseLaserBase_Small</string>
+		<string>LargeMissileTurret/LDualPulseLaserBase_Large</string>
+		<string>LargeMissileTurret/XLDualPulseLaserBase_Large</string>
+		<string>LargeMissileTurret/ShieldChargerBase_Large</string>
+
+		<string>LargeMissileTurret/AegisLargeBeamBase_Large</string>
+		<string>LargeMissileTurret/AegisMediumeamBase_Large</string>
+		<string>LargeMissileTurret/AegisSmallBeamBase_Large</string>
+		<string>SmallMissileLauncher/AegisMarauderBeamStatic_Large</string>
+    <string>SmallMissileLauncher/AegisLargeBeamStatic_Large</string>
+        <string>SmallMissileLauncher/AegisMediumBeamStaticL_Large</string>
+        <string>SmallMissileLauncher/AegisSmallBeamStatic_Large</string>
+        <string>SmallMissileLauncher/AegisMediumBeamStaticS_Small</string>
+
+        <string>LargeMissileTurret/TekMarTurret4xLargeBeamBase_Large</string>
+
+		<string>SmallMissileLauncher/LargeStaticLBeamGTF_Large</string>
+		<string>SmallMissileLauncher/LargeStaticLBeamGTF_Small</string>
+		<string>SmallMissileLauncher/SSmallBeamStaticGTF_Small</string>
+		<string>SmallMissileLauncher/MediumStaticLPulseGTF_Large</string>
+		<string>SmallMissileLauncher/MediumStaticLPulseGTF_Small</string>
+
+        <string>LargeMissileTurret/TekMarSmallBase_Large</string>
+        <string>LargeMissileTurret/TekMarTurretMedPlasmaBase_Large</string>
+        <string>LargeMissileTurret/TekMarTurretLargePlasmaBase_Large</string>
+        <string>LargeMissileTurret/TekMarXLSiegePlasmaBase_Large</string>
+
+      </ItemIds>
+    </Category>
+
+
+
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>ShipWeaponsTools</Name>
+      <SearchBlocks>false</SearchBlocks>
+      <IsShipCategory>true</IsShipCategory>
+      <IsBlockCategory>false</IsBlockCategory>
+      <ItemIds>
+
+		<string>SmallMissileLauncher/SSPhotonLauncher_Small</string>
+		<string>SmallMissileLauncher/SSDualPlasmaStatic_Small</string>
+		<string>SmallMissileLauncher/LSDualPlasmaStatic_Large</string>
+		<string>SmallMissileLauncher/NovaTorpedoLauncher_Large</string>
+		<string>SmallMissileLauncher/ThorStatic_Large</string>
+		<string>SmallMissileLauncher/ThorStatic_Small</string>
+		<string>SmallMissileLauncher/LargeStaticLBeamGTF_Large</string>
+		<string>SmallMissileLauncher/SSmallBeamStaticGTF_Small</string>
+		<string>SmallMissileLauncher/LargeStaticLBeamGTF_Small</string>
+		<string>SmallMissileLauncher/MediumStaticLPulseGTF_Large</string>
+		<string>SmallMissileLauncher/MediumStaticLPulseGTF_Small</string>
+		<string>SmallMissileLauncher/AegisMarauderBeamStatic_Large</string>
+    <string>SmallMissileLauncher/AegisLargeBeamStatic_Large</string>
+        <string>SmallMissileLauncher/AegisMediumBeamStaticL_Large</string>
+        <string>SmallMissileLauncher/AegisSmallBeamStatic_Large</string>
+        <string>SmallMissileLauncher/AegisMediumBeamStaticS_Small</string>
+
+      </ItemIds>
+    </Category>
+  
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Production</DisplayName>
+      <Name>Production</Name>
+      <ItemIds>
+        <string>Assembler/HeavyWaterRefineryLarge</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_Power</DisplayName>
+      <Name>Power</Name>
+      <ItemIds>
+        <string>Reactor/FusionWeaponReactorLarge</string>
+      </ItemIds>
+    </Category>
+
+
+
+
+
+
+
+  </CategoryClasses>
+</Definitions>

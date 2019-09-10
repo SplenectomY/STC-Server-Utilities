@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+    <Class>
+      <Id>
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>HeavyWaterRefinery</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_BlueprintClass_Ice</DisplayName>
+      <Icon>Textures\GUI\Icons\ore_H2O_ice.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+    </Class>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>WeaponParts</SubtypeId>
+      </Id>
+      <DisplayName>Weapon Parts</DisplayName>
+      <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\component_highlight.dds</HighlightIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+
+
+	</BlueprintClasses>
+  <BlueprintClassEntries>
+   
+    <Entry Class="HeavyWaterRefinery" BlueprintSubtypeId="WaterToHeavyWater" />
+
+    <Entry Class="Components" BlueprintSubtypeId="PulseCannonConstructionComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="LaserConstructionComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="PulseCannonConstructionComponentS" />
+    <Entry Class="Components" BlueprintSubtypeId="SmallLaserConstructionComponentS" />
+
+    <Entry Class="Components" BlueprintSubtypeId="CapacitorBankComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="CoolingHeatsinkComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="FocusPrysmComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="PowerCouplerComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="PWMCircuitComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="SafetyBypassComponent" />
+    <Entry Class="Components" BlueprintSubtypeId="ShieldFrequencyModuleComponent" />
+
+    <Entry Class="Components" BlueprintSubtypeId="AegisLicenseComponent" />
+
+	</BlueprintClassEntries>
+</Definitions>

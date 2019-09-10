@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CapacitorBankComponent</SubtypeId>
+      </Id>
+      <DisplayName>Capacitor Bank</DisplayName>
+      <Icon>Textures\GUI\Icons\component\CapacitorBank_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CapacitorBank" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CoolingHeatsinkComponent</SubtypeId>
+      </Id>
+      <DisplayName>Cooling Heatsink</DisplayName>
+      <Icon>Textures\GUI\Icons\component\CoolingHeatsink_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CoolingHeatsink" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>FocusPrysmComponent</SubtypeId>
+      </Id>
+      <DisplayName>Focus Prysm</DisplayName>
+      <Icon>Textures\GUI\Icons\component\FocusPrysm_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="FocusPrysm" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PowerCouplerComponent</SubtypeId>
+      </Id>
+      <DisplayName>Power Coupler</DisplayName>
+      <Icon>Textures\GUI\Icons\component\PowerCoupler_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PowerCoupler" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PWMCircuitComponent</SubtypeId>
+      </Id>
+      <DisplayName>PWM Circuit</DisplayName>
+      <Icon>Textures\GUI\Icons\component\PWMCircuit_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PWMCircuit" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SafetyBypassComponent</SubtypeId>
+      </Id>
+      <DisplayName>Safety Bypass</DisplayName>
+      <Icon>Textures\GUI\Icons\component\SafetyBypassModule_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SafetyBypass" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ShieldFrequencyModuleComponent</SubtypeId>
+      </Id>
+      <DisplayName>Shield Frequency Module</DisplayName>
+      <Icon>Textures\GUI\Icons\component\ShieldFrequencyModule_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ShieldFrequencyModule" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>WaterToHeavyWater</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Water</DisplayName>
+      <Icon>Textures\GUI\Icons\component\OxygenBottleComponent.dds</Icon>
+      <Prerequisites>
+        <Item Amount="100" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Uranium" />
+      </Prerequisites>
+      <Result Amount="0.07" TypeId="Ingot" SubtypeId="HeavyWater" />
+      <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PulseCannonConstructionComponent</SubtypeId>
+      </Id>
+      <DisplayName>Large Pulse Cannon Construction Box</DisplayName>
+      <Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2811" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="130" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="18" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PulseCannonConstructionBoxL" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LaserConstructionComponent</SubtypeId>
+      </Id>
+      <DisplayName>Large Laser Construction Box</DisplayName>
+      <Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3186" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="120" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="19" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="LaserConstructionBoxL" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PulseCannonConstructionComponentS</SubtypeId>
+      </Id>
+      <DisplayName>Small Pulse Cannon Construction Box</DisplayName>
+      <Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="643" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PulseCannonConstructionBoxS" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SmallLaserConstructionComponentS</SubtypeId>
+      </Id>
+      <DisplayName>Small Laser Construction Box</DisplayName>
+      <Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="645" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="19" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="LaserConstructionBoxS" />
+      <BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>TekMarLicenseComponent</SubtypeId>
+      </Id>
+      <DisplayName>TekMar License</DisplayName>
+      <Icon>Textures\GUI\Icons\component\CapacitorBank_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="TekMarLicense" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AegisLicenseComponent</SubtypeId>
+      </Id>
+      <DisplayName>Aegis License</DisplayName>
+      <Icon>Textures\GUI\Icons\component\CapacitorBank_Icon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="35" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AegisLicense" />
+      <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	
+  </Blueprints>
+</Definitions>

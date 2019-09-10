@@ -1,0 +1,12 @@
+Command: C:\Program Files\Havok\HavokContentTools\hctStandAloneFilterManager.exe -t -s C:\Users\Bryon\AppData\Local\Temp\space_engineers_v_k9zfoc.hko -p C:\Users\Bryon\AppData\Roaming\SpaceEngineers\Mods\TieredShipTools\Models\Cubes\BaseGrinderSB.hkt C:\Users\Bryon\AppData\Roaming\SpaceEngineers\Mods\TieredShipTools\Models\Cubes\BaseGrinderSB.hkt 
+[ Processing All Configurations... ]
+    
+    ========== Started: Sat Aug 25 07:10:59 2018, Configuration: default ==========
+    
+    [ [Physics 2012] Create Rigid Bodies Filter ]
+        Created 1 rigid bodies.
+    [ Prune Types Filter ]
+    [ Write to Platform Filter ]
+        Wrote layout for [Tagfile] to file [C:\Users\Bryon\AppData\Roaming\SpaceEngineers\Mods\TieredShipTools\Models\Cubes\BaseGrinderSB.hkt].
+    
+    ========== Finished in 00:00:00, 0 Errors, 0 Warnings ==========

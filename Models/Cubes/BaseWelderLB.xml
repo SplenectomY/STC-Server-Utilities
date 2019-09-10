@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="Scene">
+	<Parameter Name="RescaleFactor">0.01</Parameter>
+	<Parameter Name="RescaleToLengthInMeters">false</Parameter>
+	<Parameter Name="Centered">false</Parameter>
+	<Parameter Name="SpecularPower">0.0</Parameter>
+	<Parameter Name="SpecularShininess">0.0</Parameter>
+	<Material Name="Decals">
+		<Parameter Name="Technique">DECAL</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Decals_Atlas_A_01_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Decals_Atlas_A_01_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\Decals_Atlas_A_01_add.dds</Parameter>
+		<Parameter Name="AlphamaskTexture">Textures\Models\Cubes\Decals_Atlas_A_01_alphamask.dds</Parameter>
+	</Material>
+	<Material Name="PanelingDarker">
+		<Parameter Name="Technique">DECAL</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Decals_Atlas_A_02_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Decals_Atlas_A_01_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\Decals_Atlas_A_02_add.dds</Parameter>
+		<Parameter Name="AlphamaskTexture">Textures\Models\Cubes\Decals_Atlas_A_01_alphamask.dds</Parameter>
+	</Material>
+	<Material Name="PaintedMetal_Yellow">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\PaintedMetalYellow_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\PaintedMetalColorable_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Metal_Dull">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Aluminium_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\AluminiumDull_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Conveyor">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Conveyor_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Conveyor_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\Conveyor_add.dds</Parameter>
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Terminal">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\terminal_panel_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\terminal_panel_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\terminal_panel_add.dds</Parameter>
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="PaintedMetal_Colorable">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\PaintedMetalColorable_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\PaintedMetalColorable_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\PaintedMetalColorable_add.dds</Parameter>
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Emissive">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\EmissiveAtlas_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\EmissiveAtlas_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\EmissiveAtlas_add.dds</Parameter>
+		<Parameter Name="AlphamaskTexture">Textures\Models\Cubes\EmissiveAtlas_alphamask.dds</Parameter>
+	</Material>
+	<Material Name="Rubber">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Rubber_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Rubber_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="BlackMattePlastic">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\BlackMattePlastic_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\BlackMattePlastic_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Doodads">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Doodads_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Doodads_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Cubes\Doodads_add.dds</Parameter>
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="PaintedMetalScratched_Darker">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\PaintedMetalDarker_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\PaintedMetalColorable_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="PaintedMetal_Darker">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\PaintedMetalDarker_cm.DDS</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\PaintedMetalColorable_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+	<Material Name="Chrome">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="SpecularIntensity">0.0</Parameter>
+		<Parameter Name="SpecularPower">0.0</Parameter>
+		<Parameter Name="DiffuseColorX">255</Parameter>
+		<Parameter Name="DiffuseColorY">255</Parameter>
+		<Parameter Name="DiffuseColorZ">255</Parameter>
+		<!--material has no DiffuseTexture-->
+		<!--material has no NormalTexture-->
+		<Parameter Name="ColorMetalTexture">Textures\Models\Cubes\Chrome_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Cubes\Chrome_ng.dds</Parameter>
+		<!--material has no AddMapsTexture-->
+		<!--material has no AlphamaskTexture-->
+	</Material>
+</Model>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId />
+      </Id>
+      <DisplayName>Tiered Ship Tools</DisplayName>
+      <Name>Tiered Ship Tools</Name>
+      <IsShipCategory>true</IsShipCategory>
+      <IsBlockCategory>true</IsBlockCategory>
+      <ItemIds>
+        <string>Small_Drill_Tier1</string>
+        <string>Small_Drill_Tier2</string>
+        <string>Small_Drill_Tier3</string>
+        <string>Small_Drill_Tier4</string>
+        <string>Large_Drill_Tier1</string>
+        <string>Large_Drill_Tier2</string>
+        <string>Large_Drill_Tier3</string>
+        <string>Large_Drill_Tier4</string>
+
+        <string>LargeOreDetector_Tier1</string>
+        <string>LargeOreDetector_Tier2</string>
+        <string>LargeOreDetector_Tier3</string>
+        <string>LargeOreDetector_Tier4</string>
+        <string>Small_OreDetector_Tier1</string>
+        <string>Small_OreDetector_Tier2</string>
+        <string>Small_OreDetector_Tier3</string>
+        <string>Small_OreDetector_Tier4</string>
+
+        <string>BaseWelderLB</string>
+        <string>BaseGrinderLB</string>
+        <string>SBWelderBase</string>
+        <string>SBGrinderBase</string>
+
+        <string>UpgradeChipT1</string>
+        <string>UpgradeChipT2</string>
+        <string>UpgradeChipT3</string>
+        <string>UpgradeChipT4</string>
+
+        <string>LBUpgradeChipT1</string>
+        <string>LBUpgradeChipT2</string>
+        <string>LBUpgradeChipT3</string>
+        <string>LBUpgradeChipT4</string>
+
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId />
+      </Id>
+      <DisplayName>ShipTools</DisplayName>
+      <Name>ShipTools</Name>
+      <SearchBlocks>false</SearchBlocks>
+      <IsShipCategory>true</IsShipCategory>
+      <IsBlockCategory>false</IsBlockCategory>
+      <ItemIds>
+        <string>ShipWelder/BaseWelderLB</string>
+        <string>ShipGrinder/BaseGrinderLB</string>
+        <string>ShipWelder/BaseWelderSB</string>
+        <string>ShipGrinder/BaseGrinderSB</string>
+
+        <string>Small_Drill_Tier1</string>
+        <string>Small_Drill_Tier2</string>
+        <string>Small_Drill_Tier3</string>
+        <string>Small_Drill_Tier4</string>
+        <string>Large_Drill_Tier1</string>
+        <string>Large_Drill_Tier2</string>
+        <string>Large_Drill_Tier3</string>
+        <string>Large_Drill_Tier4</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

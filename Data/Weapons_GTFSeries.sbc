@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>PulseLaserShot</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="500" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>BEHR_LaserCannon_S7x2</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="50" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class7LaserPulseCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>S5x2LaserCannon</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="70" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Size5LaserCannonCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>PulseLaserShotx5</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="500" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+    
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>PulseLaserShotx10</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="1000" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+  <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>BeamLaserShot</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="275" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <DeviateShotAngle>0.2</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class1LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>KLWE_LaserRepeater_S6</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="200" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <DeviateShotAngle>0.2</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class6LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>S6x2LaserRepeater</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="400" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <DeviateShotAngle>0.2</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Class6LaserBeamCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>S7x2LaserRepeater</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="380" ShootSoundName="Pulse_turret_shot"/>
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <DeviateShotAngle>0.2</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="Size7LaserRepeaterCharge" />
+      </AmmoMagazines>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>Aegis_Static_Large</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="400" ShootSoundName="Pulse_turret_shot" />
+      <ReleaseTimeAfterFire>0</ReleaseTimeAfterFire>
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <DeviateShotAngle>0.3</DeviateShotAngle>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="AegisStaticLargeMag" />
+      </AmmoMagazines>
+    </Weapon>
+
+		<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>FighterDualLightBlaster</SubtypeId>
+			 </Id>
+		  <ProjectileAmmoData RateOfFire="200" ShootSoundName="Pulse_turret_shot"/>  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+		  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineFighterDualLightBlaster" />
+		  </AmmoMagazines>
+		</Weapon>
+ 
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>SmallBlasterTurret</SubtypeId>
+      </Id>
+	  <ProjectileAmmoData RateOfFire="200" ShootSoundName="Pulse_turret_shot" ShotsInBurst="2" />  
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+      <ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineSmallBlasterTurret" />
+      </AmmoMagazines>
+      <ReloadTime>1000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>MediumBlasterTurret</SubtypeId>
+      </Id>
+	  <MissileAmmoData RateOfFire="70" ShootSoundName="Pulse_turret_shot" ShotsInBurst="2" />  
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineMediumBlasterTurret" />
+      </AmmoMagazines>
+      <ReloadTime>2000</ReloadTime>
+    </Weapon>
+
+	<Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>MediumBlasterStatic</SubtypeId>
+      </Id>
+	  <MissileAmmoData RateOfFire="70" ShootSoundName="Pulse_turret_shot" ShotsInBurst="2" />  
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineMediumBlasterTurret" />
+      </AmmoMagazines>
+      <ReloadTime>2000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>MedBroadside</SubtypeId>
+      </Id>
+	  <MissileAmmoData RateOfFire="40" ShootSoundName="Pulse_shot" ShotsInBurst="6" />  
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3.5</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineLargeBlasterTurret" />
+      </AmmoMagazines>
+      <ReloadTime>2000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>LargeBlasterTurret</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="85" ShootSoundName="Pulse_shot" ShotsInBurst="3" />
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3.5</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineLargeBlasterTurret" />
+      </AmmoMagazines>
+      <ReloadTime>2000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>CitadelBlasterTurret</SubtypeId>
+      </Id>
+	  <MissileAmmoData RateOfFire="10" ShootSoundName="Pulse_shot" />  
+	  <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.5</DeviateShotAngle>
+      <ReleaseTimeAfterFire>3.5</ReleaseTimeAfterFire>
+      <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="MagazineCitadelBlasterTurret" />
+      </AmmoMagazines>
+    </Weapon>
+
+	<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>Small_Photon_Torpedo</SubtypeId>
+			 </Id>
+		  <MissileAmmoData RateOfFire="4" ShootSoundName="Pulse_turret_shot" />  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineSmallTorpedoPowerCellRed" />
+		  </AmmoMagazines>
+		</Weapon>
+	<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>Nova_Torpedo</SubtypeId>
+			 </Id>
+		  <MissileAmmoData RateOfFire="2" ShootSoundName="Pulse_turret_shot" />  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineNovaTorpedoPowerCellRed" />
+		  </AmmoMagazines>
+		</Weapon>
+	<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>Thor_Missile</SubtypeId>
+			 </Id>
+		  <MissileAmmoData RateOfFire="14" ShootSoundName="Pulse_turret_shot" />  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineThorMissilePowerCellOrange" />
+		  </AmmoMagazines>
+		</Weapon>
+	<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>Thor_MissileTurret</SubtypeId>
+			 </Id>
+		  <MissileAmmoData RateOfFire="50" ShootSoundName="Pulse_turret_shot" ShotsInBurst="2" />  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineThorMissilePowerCellOrange" />
+		  </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+		</Weapon>
+	<Weapon>
+			 <Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>Thor_MissileSmall</SubtypeId>
+			 </Id>
+		  <MissileAmmoData RateOfFire="33" ShootSoundName="Pulse_turret_shot" />  
+		  <NoAmmoSoundName>WepPlayRifleNoAmmo</NoAmmoSoundName>
+	  <DeviateShotAngle>0.3</DeviateShotAngle>
+		  <ReleaseTimeAfterFire>446</ReleaseTimeAfterFire>
+		  <MuzzleFlashLifeSpan>0</MuzzleFlashLifeSpan>
+		  <AmmoMagazines>
+			<AmmoMagazine Subtype="MagazineSmallThorMissilePowerCellOrange" />
+		  </AmmoMagazines>
+		</Weapon>
+	
+</Weapons>
+</Definitions>

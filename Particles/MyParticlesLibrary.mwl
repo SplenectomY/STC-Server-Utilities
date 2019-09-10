@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ParticleEffects>
+    <ParticleEffect xsi:type="MyObjectBuilder_ParticleEffect">
+      <Id>
+        <TypeId>ParticleEffect</TypeId>
+        <SubtypeId>Smoke_Missile</SubtypeId>
+      </Id>
+      <Version>0</Version>
+      <ParticleId>502</ParticleId>
+      <Length>1</Length>
+      <DurationMin>0</DurationMin>
+      <DurationMax>0</DurationMax>
+      <Loop>false</Loop>
+      <Preload>0</Preload>
+      <LowRes>false</LowRes>
+      <ParticleGenerations>
+      </ParticleGenerations>
+      <ParticleSounds />
+    </ParticleEffect>
+  </ParticleEffects>
+</Definitions>

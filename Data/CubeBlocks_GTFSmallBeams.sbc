@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+ 
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>SmallBeamBaseGTF_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Small Beam Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\SmallGTFBeam_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\SmallBeamBaseGTF_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="4" />
+        <Component Subtype="CoolingHeatsink" Count="4" />
+        <Component Subtype="FocusPrysm" Count="4" />
+        <Component Subtype="PowerCoupler" Count="4" />
+        <Component Subtype="ShieldFrequencyModule" Count="4" />
+        <Component Subtype="SafetyBypass" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\SmallBeamBaseGTF_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>SmallBeamBaseGTF</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="BeamLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-6</MinElevationDegrees>
+      <MaxElevationDegrees>70</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>Interior_Pulse_Laser_Base_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Pulse Laser Interior Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\InteriorPulseLaser_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\Interior_Pulse_Laser_Base_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="4" />
+        <Component Subtype="CoolingHeatsink" Count="4" />
+        <Component Subtype="FocusPrysm" Count="4" />
+        <Component Subtype="PowerCoupler" Count="4" />
+        <Component Subtype="ShieldFrequencyModule" Count="4" />
+        <Component Subtype="PWMCircuit" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\Interior_Pulse_Laser_Base_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>Interior_Pulse_Laser_Base</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PulseLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-16</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>200</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>SmallPulseLaser_Base_Large</SubtypeId>
+      </Id>
+      <DisplayName>GTF Small Pulse Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\SmallPulseLaser_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\SmallPulseLaser_Base_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="LaserConstructionBoxL" Count="4" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="4" />
+        <Component Subtype="CoolingHeatsink" Count="4" />
+        <Component Subtype="FocusPrysm" Count="4" />
+        <Component Subtype="PowerCoupler" Count="4" />
+        <Component Subtype="ShieldFrequencyModule" Count="4" />
+        <Component Subtype="PWMCircuit" Count="4" />
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="0.20" StartY="0.20" EndX="0.80" EndY="0.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\SmallPulseLaser_Base_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>SmallPulseLaser_Base</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="PulseLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>    <!-- new weapon reactor -->
+      <MinElevationDegrees>0</MinElevationDegrees>
+      <MaxElevationDegrees>40</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>800</MaxRangeMeters>
+      <RotationSpeed>0.002</RotationSpeed>
+      <ElevationSpeed>0.002 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+
+	
+
+	<!-- ************************************************* Aegis Weapons *****************************************************-->
+	
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+		<SubtypeId>AegisSmallBeamBase_Large</SubtypeId>
+      </Id>
+      <DisplayName>Aegis Small Multi-Laser</DisplayName>
+      <Icon>Textures\GUI\Icons\AegisSmall_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>							<!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\large\AegisSmallBeamBase_Large.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="AegisLicense" Count="1" />
+        <Component Subtype="LaserConstructionBoxL" Count="9" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="4" />
+        <Component Subtype="CoolingHeatsink" Count="4" />
+        <Component Subtype="FocusPrysm" Count="4" />
+        <Component Subtype="PowerCoupler" Count="4" />
+        <Component Subtype="ShieldFrequencyModule" Count="4" />
+        <Component Subtype="PWMCircuit" Count="4" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+		<MountPoint Side="Bottom" StartX="1.20" StartY="1.20" EndX="1.80" EndY="1.80" />
+      </MountPoints>
+      <BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\AegisSmallBeamBase_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	<BlockPairName>AegisSmallBeamBase</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="BeamLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-2</MinElevationDegrees>
+      <MaxElevationDegrees>90</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1700</MaxRangeMeters>
+      <RotationSpeed>0.00024</RotationSpeed>
+      <ElevationSpeed>0.00024 </ElevationSpeed>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <AiEnabled>true</AiEnabled>
+      <PCU>225</PCU>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>AegisSmallBeamStatic_Large</SubtypeId>
+      </Id>
+      <DisplayName>Aegis Small Static Beam Laser</DisplayName>
+      <Icon>Textures\GUI\Icons\AegisStatic_Icon.dds</Icon>
+      <Public>true</Public>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
+      <!-- large or small block -->
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Center x="0" y="0" z="3" />
+      <Model>Models\Cubes\large\AegisSmallBeamStatic_Large.mwm</Model>
+      <UseModelIntersection>false</UseModelIntersection>
+      <Components>
+        <Component Subtype="AegisLicense" Count="1" />
+        <Component Subtype="LaserConstructionBoxL" Count="9" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="PWMCircuit" Count="10" />
+        <Component Subtype="CapacitorBank" Count="4" />
+        <Component Subtype="CoolingHeatsink" Count="4" />
+        <Component Subtype="FocusPrysm" Count="4" />
+        <Component Subtype="PowerCoupler" Count="4" />
+        <Component Subtype="ShieldFrequencyModule" Count="4" />
+        <Component Subtype="PWMCircuit" Count="4" />
+        <Component Subtype="SteelPlate" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.20" StartY="3.20" EndX="0.80" EndY="3.80" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\AegisSmallBeamStatic_Large_Constr1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>AegisSmallBeamStatic</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <WeaponDefinitionId Subtype="BeamLaserShot" />
+      <InventoryMaxVolume>0.384</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>225</PCU>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
