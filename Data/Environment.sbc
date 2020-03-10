@@ -6,8 +6,8 @@
       <SubtypeId>Default</SubtypeId>
     </Id>
 
-    <SmallShipMaxSpeed>900</SmallShipMaxSpeed>
-    <LargeShipMaxSpeed>1000</LargeShipMaxSpeed>
+    <SmallShipMaxSpeed>500</SmallShipMaxSpeed>
+    <LargeShipMaxSpeed>400</LargeShipMaxSpeed>
     <SmallShipMaxAngularSpeed>360</SmallShipMaxAngularSpeed>
     <LargeShipMaxAngularSpeed>360</LargeShipMaxAngularSpeed>
 	</Definition>

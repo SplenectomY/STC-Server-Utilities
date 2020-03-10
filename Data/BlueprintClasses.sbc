@@ -2,17 +2,6 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <BlueprintClasses>
     <Class>
-      <Id>
-        <TypeId>BlueprintClassDefinition</TypeId>
-        <SubtypeId>HeavyWaterRefinery</SubtypeId>
-      </Id>
-      <DisplayName>DisplayName_BlueprintClass_Ice</DisplayName>
-      <Icon>Textures\GUI\Icons\ore_H2O_ice.dds</Icon>
-      <HighlightIcon>Textures\GUI\Icons\buttons\large_block_highlight.dds</HighlightIcon>
-      <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
-      <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
-    </Class>
-    <Class>
       <Id>                   
         <TypeId>BlueprintClassDefinition</TypeId>
         <SubtypeId>WeaponParts</SubtypeId>
@@ -26,8 +15,6 @@
 
 	</BlueprintClasses>
   <BlueprintClassEntries>
-   
-    <Entry Class="HeavyWaterRefinery" BlueprintSubtypeId="WaterToHeavyWater" />
 
     <Entry Class="Components" BlueprintSubtypeId="PulseCannonConstructionComponent" />
     <Entry Class="Components" BlueprintSubtypeId="LaserConstructionComponent" />
